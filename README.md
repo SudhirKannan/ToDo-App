@@ -14,7 +14,7 @@ It allows you to add, edit, delete, and mark tasks as completed. Tasks are saved
 
 ## How to use
 
-1. Open the live webiste in a browser.
+1. Open the live website in a browser.
 2. Type a task and click "+" to add it.
 3. Click on a task to mark it done or undone.
 4. Use the edit (✏️) and delete (🗑️) buttons to modify tasks.
