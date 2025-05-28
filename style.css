@@ -1,0 +1,165 @@
+:root {
+  --background: #000430;
+  --secondaryBackground: #171c48;
+  --text: #fff;
+  --purple: #8800ff;
+  --teal: #24feee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: 120px auto;
+}
+
+.stats-container {
+  width: 100%;
+  padding: 30px;
+  border: 2px solid var(--purple);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  font-size: 20px;
+  width: 60%;
+}
+
+.details p {
+  margin-top: 10px;
+}
+
+#progressbar {
+  height: 10px;
+  width: 100%;
+  background-color: var(--secondaryBackground);
+  margin: 30px auto;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#progress {
+  height: 100%;
+  width: 80%;
+  border-radius: 50px;
+  background-color: var(--purple);
+  transition: width 0.3s ease;
+}
+
+.stats-numbers {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#numbers {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--purple);
+  border: 2px solid var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+form {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+}
+
+input {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid var(--purple);
+  border-radius: 20px;
+  background: var(--secondaryBackground);
+  letter-spacing: 1px;
+  outline: none;
+  color: white;
+  font-size: 20px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 30px;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+ul {
+  width: 100%;
+  margin: 20px 20px;
+  font-size: 20px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: var(--secondaryBackground);
+  border: 1px solid var(--text);
+}
+
+.done,
+.task-item.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.task-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.task-controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
